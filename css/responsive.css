@@ -1,0 +1,49 @@
+@media screen and (max-width: 600px) {
+  .text {
+    text-align: justify;
+  }
+  .nav-menu {
+    display: flex;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-toggle-btn {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+  .nav-toggle-btn:hover {
+    cursor: pointer;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-toggle.active {
+    display: block;
+  }
+  .inner-nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100%;
+  }
+  .inner-nav ul li {
+    padding: 7px 15px;
+    background-color: #fff;
+  }
+  .animation {
+    animation: showitem 0.3s ease-in;
+  }
+  @keyframes showitem {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
